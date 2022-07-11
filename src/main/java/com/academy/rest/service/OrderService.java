@@ -19,7 +19,7 @@ public class OrderService {
 
 
     public List<Order> getAllOrdersForCustomer(String customerId){
-        return orderRepository.findAll();
+        return orderRepository.findByCustomer_CustomerId(customerId);
     }
 
     public List<Order> getAllOrders(){
@@ -30,5 +30,7 @@ public class OrderService {
         return orderRepository.findById(id).isPresent() ?
                 orderRepository.findById(id).get() : null;
     }
+
+
 
 }

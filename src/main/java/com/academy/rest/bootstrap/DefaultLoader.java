@@ -44,6 +44,18 @@ public class DefaultLoader implements CommandLineRunner {
         customer1.setCompanyName("company2");
         customerRepository.save(customer1);
 
+        Order order2 = new Order();
+        order2.setQuantity(15);
+        order2.setPrice(27d);
+        order2.setCustomer(customer1);
+        orderRepository.save(order2);
+
+        Order order3 = new Order();
+        order3.setQuantity(18);
+        order3.setPrice(57d);
+        order3.setCustomer(customer1);
+        orderRepository.save(order3);
+
 
     }
 }

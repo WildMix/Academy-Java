@@ -22,4 +22,8 @@ public interface OrderRepository extends CrudRepository<Order,String> {
 
     @Override
     <S extends Order> List<S> saveAll(Iterable<S> entities);
+
+    List<Order> findByCustomer_CustomerId(String customerId);
+
+
 }
