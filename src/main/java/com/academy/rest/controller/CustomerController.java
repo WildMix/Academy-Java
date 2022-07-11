@@ -68,6 +68,8 @@ public class CustomerController implements CustomerApi {
 
     @Override
     public ResponseEntity<String> deleteCustomer(String customerId) {
+        if (!customerService.customerExists(customerId))
+            return new ResponseEntity<>("Customer " + customerId + " not found", HttpStatus.NOT_FOUND);
         customerService.deleteCustomer(customerId);
         return new ResponseEntity<>("Customer " + customerId + " deleted", HttpStatus.OK);
     }

@@ -4,31 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0a074988-1596-4c84-ae72-d60e62c7d979" name="Changes" comment="added OrderControllerV2.java">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/academy/rest/bootstrap/DefaultLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/academy/rest/repositories/CustomerRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/academy/rest/repositories/OrderRepository.java" afterDir="false" />
+    <list default="true" id="0a074988-1596-4c84-ae72-d60e62c7d979" name="Changes" comment="added database repositories">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rest-hateoas.iml" beforeDir="false" afterPath="$PROJECT_DIR$/rest-hateoas.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/academy/rest/RestHateoasApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/academy/rest/RestHateoasApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/academy/rest/domain/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/academy/rest/domain/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/academy/rest/domain/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/academy/rest/domain/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/academy/rest/controller/CustomerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/academy/rest/controller/CustomerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/academy/rest/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/academy/rest/controller/OrderController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/academy/rest/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/academy/rest/service/CustomerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/academy/rest/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/academy/rest/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/academy/rest/RestHateoasApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/academy/rest/RestHateoasApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/academy/rest/domain/Customer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/academy/rest/domain/Customer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/academy/rest/domain/Order.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/academy/rest/domain/Order.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/academy/rest/controller/CustomerController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/academy/rest/controller/CustomerController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/academy/rest/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/academy/rest/controller/OrderController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/academy/rest/service/CustomerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/academy/rest/service/CustomerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/academy/rest/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/academy/rest/service/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rest-hateoas-0.0.1-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/rest-hateoas-0.0.1-SNAPSHOT.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/rest-hateoas-0.0.1-SNAPSHOT.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/target/rest-hateoas-0.0.1-SNAPSHOT.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.academy.rest.RestHateoasApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.academy.rest.RestHateoasApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.academy.rest.RestHateoasApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.academy.rest.RestHateoasApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -124,7 +107,7 @@
       <workItem from="1657273378781" duration="18328000" />
       <workItem from="1657357771774" duration="64000" />
       <workItem from="1657462955138" duration="2778000" />
-      <workItem from="1657524193318" duration="19353000" />
+      <workItem from="1657524193318" duration="24330000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1657536946874</created>
@@ -140,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657541406377</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="added database repositories">
+      <created>1657548018582</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1657548018582</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +150,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="added OrderControllerV2.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="added OrderControllerV2.java" />
+    <MESSAGE value="added database repositories" />
+    <option name="LAST_COMMIT_MESSAGE" value="added database repositories" />
   </component>
 </project>

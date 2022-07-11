@@ -76,5 +76,8 @@ public class CustomerService {
         return customerRepository.save(customer);
     }
 
+    public boolean customerExists(String customerId){
+        return customerRepository.existsById(customerId);
+    }
 
 }
