@@ -1,52 +1,46 @@
 package com.academy.rest.service;
 
 import com.academy.rest.domain.Customer;
+import com.academy.rest.domain.Order;
+import com.academy.rest.repositories.CustomerRepository;
+import com.academy.rest.repositories.OrderRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 @Service
 public class CustomerService {
+    @Autowired
+    private CustomerRepository customerRepository;
 
-    List<Customer> customers = new ArrayList<>();
+
 
     public List<Customer> getAllCustomers(){
 
-        customers.add(new Customer("1551","Luigi","Fincons"));
-        customers.add(new Customer("1551","Luigi","Fincons"));
-        customers.add(new Customer("1551","Luigi","Fincons"));
-        return customers;
+        return customerRepository.findAll();
 
     }
 
     public Customer getCustomerById(String id){
-        List<Customer> customers1 = customers
-                .stream()
-                .filter(customer -> customer.getCustomerId()
-                        .equals(id)).toList();
-        return customers1.size()==0 ? null : customers1.get(0);
+        return customerRepository.findById(id).isPresent() ?
+                customerRepository.findById(id).get() : null;
     }
 
     public void deleteCustomer(String id){
-        List<Customer> operatedList = new ArrayList<>();
-        customers.stream()
-                .filter(customer -> customer.getCustomerId().equals(id))
-                .forEach(operatedList::add);
-        customers.removeAll(operatedList);
+        customerRepository.deleteById(id);
     }
 
     public void addCustomer(Customer customer){
-        customers.add(customer);
+        customerRepository.save(customer);
     }
 
     public void updateCustomer(Customer customer){
-        Customer customerToUpdate;
-        customers.stream()
-                .filter(customer1 -> customer1.getCustomerId().equals(customer.getCustomerId()))
-                .forEach(customer1 -> {
 
-                });
+
 
     }
 
@@ -75,12 +69,11 @@ public class CustomerService {
 
 
     public Customer saveOrUpdate(Customer customer) {
-        customers.stream().forEach(customer1 -> {
-            if(customer1.getCustomerId().equals(customer.getCustomerId()))
-                customers.add(customers.indexOf(customer1),customer);
-        });
-        customers.add(customer);
-        return customer;
+        if (customerRepository.existsById(customer.getCustomerId())){
+            customerRepository.deleteById(customer.getCustomerId());
+            return customerRepository.save(customer);
+        }
+        return customerRepository.save(customer);
     }
 
 

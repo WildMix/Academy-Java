@@ -1,1 +1,10 @@
+com\academy\rest\controller\OrderController.class
+com\academy\rest\domain\Customer.class
+com\academy\rest\api\CustomerApi.class
+com\academy\rest\controller\OrderControllerV2.class
+com\academy\rest\api\OrderApi.class
+com\academy\rest\domain\Order.class
+com\academy\rest\controller\CustomerController.class
+com\academy\rest\service\CustomerService.class
 com\academy\rest\RestHateoasApplication.class
+com\academy\rest\service\OrderService.class
